@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CubeSpin : MonoBehaviour
 {
-    public float rotationSpeed = 90;
+    public float rotationSpeed = 180;
     public float stopDuration = 2;
 
     float angle;
