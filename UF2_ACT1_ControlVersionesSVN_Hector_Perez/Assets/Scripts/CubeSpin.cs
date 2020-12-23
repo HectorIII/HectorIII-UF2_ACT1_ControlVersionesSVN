@@ -17,7 +17,7 @@ public class CubeSpin : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        angle = 0;
+        angle = 10;
 
         rotating = false;
     }
@@ -47,7 +47,8 @@ public class CubeSpin : MonoBehaviour
             angle = angle + (Mathf.Round(angle / 90) * 90 - angle) * stopTimer / stopDuration;
         }
 
-        transform.rotation = Quaternion.Euler(angle, 0, 0);
+        //Cambiar la variable angle de posicion x a y
+        transform.rotation = Quaternion.Euler(0, angle, 0);
 
         clicked = false;
     }
